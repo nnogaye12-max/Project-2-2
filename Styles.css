@@ -140,3 +140,41 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: #228B22;
 }
+/* Bootstrap Section Headings */
+.accordion {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.card-group {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #006400;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #333;
+}
+
+/* Match site's color scheme */
+.accordion-button:not(.collapsed) {
+    background-color: #F5DEB3;
+    color: #006400;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #228B22;
+}
