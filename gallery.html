@@ -1,51 +1,61 @@
-<article>
-    <link rel="stylesheet" href="Styles.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipes | Teranga Table</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Teranga Table</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#facts">Culture</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<section class="page-head">
+  <div class="container"><h1>Recipes</h1><p class="lead mb-0">Three Senegalese classics to start with.</p></div>
+</section>
 
-    <h2>Senegalese Food Gallery</h2>
-
-    <div class="gallery">
-        <a target="_blank" href="thieboudienne.jpg">
-            <img src="thieboudienne.jpg" alt="Thieboudienne">
-        </a>
-        <div class="desc">Thieboudienne - Senegal's national fish and rice dish.</div>
+<main class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col"><div class="card h-100">
+      <img src="thieboudienne.jpg" class="card-img-top" alt="Thieboudienne">
+      <div class="card-body"><h2 class="h5 card-title">Thieboudienne</h2>
+        <p class="card-text">Fish and rice cooked in a tomato sauce with cassava, carrot, and cabbage.</p>
+        <span class="badge text-bg-warning">National dish</span></div></div></div>
+    <div class="col"><div class="card h-100">
+      <img src="yassa.png" class="card-img-top" alt="Chicken Yassa">
+      <div class="card-body"><h2 class="h5 card-title">Chicken Yassa</h2>
+        <p class="card-text">Chicken marinated in lemon and mustard, then simmered with caramelized onions.</p>
+        <span class="badge text-bg-warning">Tangy</span></div></div></div>
+    <div class="col"><div class="card h-100">
+      <img src="mafe.jpg" class="card-img-top" alt="Mafe">
+      <div class="card-body"><h2 class="h5 card-title">Mafe</h2>
+        <p class="card-text">A peanut stew with tender meat and vegetables, served over rice.</p>
+        <span class="badge text-bg-warning">Hearty</span></div></div></div>
+  </div>
+</main>
+<footer class="site-footer mt-5 py-4">
+  <div class="container">
+    <div class="row gy-3">
+      <div class="col-md-6"><h5 class="text-white">Teranga Table</h5><p class="mb-0">Senegalese flavors and the spirit of hospitality.</p></div>
+      <div class="col-md-6 text-md-end"><a href="index.html">Home</a> &middot; <a href="gallery.html">Recipes</a> &middot; <a href="contact.html">Contact</a><p class="mt-2 mb-0">&copy; 2026 Teranga Table</p></div>
     </div>
-
-    <div class="gallery">
-        <a target="_blank" href="yassa.png">
-            <img src="yassa.png" alt="Chicken Yassa">
-        </a>
-        <div class="desc">Chicken Yassa with onions and lemon sauce.</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="mafe.jpg">
-            <img src="mafe.jpg" alt="Mafe">
-        </a>
-        <div class="desc">Mafe, a rich peanut stew served with rice.</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="fataya.jpg">
-            <img src="fataya.jpg" alt="Fataya">
-        </a>
-        <div class="desc">Fataya, a popular Senegalese snack.</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" href="ataya.jpg">
-            <img src="ataya.jpg" alt="Fataya">
-        </a>
-        <div class="desc">Ataya, a popular Senegalese hot-drink.</div>
-    </div>
-     <div class="gallery">
-        <a target="_blank" href="bissap.jpg">
-            <img src="bissap.jpg" alt="Bissap">
-        </a>
-        <div class="desc">Bissap, a popular Senegalese cold-drink.</div>
-    </div>
-      <div class="gallery">
-        <a target="_blank" href="bouye.jpg">
-            <img src="bouye.jpg" alt="Bouye">
-        </a>
-        <div class="desc">Bouye, a popular Senegalese cold-drink.</div>
-    </div>
-</article>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
