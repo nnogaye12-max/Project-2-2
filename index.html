@@ -1,151 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Teranga Table</title>
-    <link rel="stylesheet" href="Styles.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Teranga Table</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
 </head>
-
 <body>
-
 <header>
-    <h1>Teranga Table</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Recipes</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Teranga Table</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#facts">Culture</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
-
-<main>
-
-    <article>
-        <h2>Welcome to Teranga Table</h2>
-
-        <p>
-            Teranga Table celebrates the rich flavors and traditions
-            of Senegalese cuisine.
-        </p>
-<h2 class="mt-5">Featured Senegalese Dishes</h2>
-
-<div class="card-group">
-
-  <div class="card">
-    <img src="thieboudienne.jpg"
-         class="card-img-top"
-         alt="Thieboudienne">
-    <div class="card-body">
-      <h5 class="card-title">Thieboudienne</h5>
-      <p class="card-text">
-        Senegal's national dish featuring fish, rice,
-        and vegetables.
-      </p>
-    </div>
+</header>
+<section class="hero text-center">
+  <div class="container">
+    <h1>Welcome to Teranga Table</h1>
+    <p class="lead mx-auto" style="max-width:40rem">Teranga is Senegal's tradition of welcoming guests. Come in, sit down, and eat well.</p>
+    <a href="gallery.html" class="btn btn-gold btn-lg mt-3">Browse recipes</a>
   </div>
+</section>
 
-  <div class="card">
-    <img src="yassa.png"
-         class="card-img-top"
-         alt="Chicken Yassa">
-    <div class="card-body">
-      <h5 class="card-title">Chicken Yassa</h5>
-      <p class="card-text">
-        Marinated chicken cooked with onions,
-        lemon, and mustard.
-      </p>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="mafe.jpg"
-         class="card-img-top"
-         alt="Mafe">
-    <div class="card-body">
-      <h5 class="card-title">Mafe</h5>
-      <p class="card-text">
-        A rich peanut stew often served with rice.
-      </p>
-    </div>
-  </div>
-
-</div>
-        <p>
-            Explore popular dishes, cooking techniques, and cultural
-            traditions from Senegal.
-        </p>
-        <h2 class="mt-4">Senegalese Food Facts</h2>
-
-<div class="accordion" id="foodAccordion">
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne">
-        What is Thieboudienne?
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show">
-      <div class="accordion-body">
-        Thieboudienne is Senegal's national dish made with fish,
-        rice, and vegetables.
+<main class="container mt-5">
+  <div class="row g-5">
+    <article class="col-lg-8">
+      <h2>Featured Senegalese Dishes</h2>
+      <p>Explore popular dishes, cooking techniques, and cultural traditions from Senegal.</p>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4">
+        <div class="col"><div class="card h-100">
+          <img src="thieboudienne.jpg" class="card-img-top" alt="Thieboudienne">
+          <div class="card-body"><h5 class="card-title">Thieboudienne</h5>
+          <p class="card-text">Senegal's national dish featuring fish, rice, and vegetables.</p></div></div></div>
+        <div class="col"><div class="card h-100">
+          <img src="yassa.png" class="card-img-top" alt="Chicken Yassa">
+          <div class="card-body"><h5 class="card-title">Chicken Yassa</h5>
+          <p class="card-text">Marinated chicken cooked with onions, lemon, and mustard.</p></div></div></div>
+        <div class="col"><div class="card h-100">
+          <img src="mafe.jpg" class="card-img-top" alt="Mafe">
+          <div class="card-body"><h5 class="card-title">Mafe</h5>
+          <p class="card-text">A rich peanut stew often served with rice.</p></div></div></div>
       </div>
-    </div>
-  </div>
 
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo">
-        What does Teranga mean?
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        Teranga is the Senegalese tradition of hospitality,
-        generosity, and welcoming guests.
+      <h2 class="mt-5" id="facts">Senegalese Food Facts</h2>
+      <div class="accordion" id="foodAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="true" aria-controls="c1">What is Thieboudienne?</button></h3>
+          <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#foodAccordion"><div class="accordion-body">Thieboudienne is Senegal's national dish made with fish, rice, and vegetables.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2" aria-expanded="false" aria-controls="c2">What does Teranga mean?</button></h3>
+          <div id="c2" class="accordion-collapse collapse" data-bs-parent="#foodAccordion"><div class="accordion-body">Teranga is the Senegalese tradition of hospitality, generosity, and welcoming guests.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3" aria-expanded="false" aria-controls="c3">Popular Senegalese Drinks</button></h3>
+          <div id="c3" class="accordion-collapse collapse" data-bs-parent="#foodAccordion"><div class="accordion-body">Bissap (hibiscus juice), bouye (baobab juice), and ginger juice are among the most popular drinks in Senegal.</div></div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree">
-        Popular Senegalese Drinks
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        Bissap (hibiscus juice), bouye (baobab juice), and ginger
-        juice are among the most popular drinks in Senegal.
-      </div>
-    </div>
-  </div>
-
-</div>
     </article>
 
-    <aside>
+    <aside class="col-lg-4">
+      <div class="sidebar">
         <h3>Featured Dish</h3>
-
-        <p>
-            Thieboudienne is one of Senegal's most famous dishes.
-        </p>
+        <p>Thieboudienne is one of Senegal's most famous dishes.</p>
+        <a href="gallery.html" class="btn btn-outline-dark btn-sm">See all recipes</a>
+      </div>
     </aside>
-
+  </div>
 </main>
-
-<footer>
-    <p>&copy; 2026 Teranga Table</p>
+<footer class="site-footer mt-5 py-4">
+  <div class="container">
+    <div class="row gy-3">
+      <div class="col-md-6"><h5 class="text-white">Teranga Table</h5><p class="mb-0">Senegalese flavors and the spirit of hospitality.</p></div>
+      <div class="col-md-6 text-md-end"><a href="index.html">Home</a> &middot; <a href="gallery.html">Recipes</a> &middot; <a href="contact.html">Contact</a><p class="mt-2 mb-0">&copy; 2026 Teranga Table</p></div>
+    </div>
+  </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
