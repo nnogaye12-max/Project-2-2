@@ -1,180 +1,21 @@
-body {
-    width: 90%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
+:root{
+  --green:#1f4d3a; --gold:#e3a72f; --hibiscus:#7a1e3a; --ink:#22211f; --paper:#fbfaf7;
+  --bs-body-font-family:"Source Sans 3",system-ui,sans-serif; --bs-body-color:var(--ink); --bs-body-bg:var(--paper);
 }
-
-header {
-    width: 100%;
-    background-color: #006400;
-    color: white;
-    text-align: center;
-    padding: 2%;
-}
-
-nav {
-    width: 100%;
-    background-color: #D2691E;
-    padding: 1%;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 3%;
-}
-
-main {
-    overflow: auto;
-}
-
-article {
-    width: 70%;
-    float: left;
-    padding: 2%;
-}
-
-aside {
-    width: 20%;
-    float: right;
-    padding: 2%;
-    background-color: #F5DEB3;
-}
-
-footer {
-    clear: both;
-    width: 100%;
-    background-color: #006400;
-    color: white;
-    text-align: center;
-    padding: 2%;
-}
-/* Form Styles */
-
-form {
-    width: 90%;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-input[type="submit"],
-input[type="reset"] {
-    width: auto;
-    background-color: #006400;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-/* Gallery Styles */
-
-.gallery {
-    margin: 10px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 220px;
-}
-
-.gallery:hover {
-    border: 1px solid #777;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.desc {
-    padding: 10px;
-    text-align: center;
-}
-/* Contact Form Styles */
-
-form {
-    width: 90%;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-input[type="submit"],
-input[type="reset"] {
-    width: auto;
-    background-color: #006400;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    background-color: #228B22;
-}
-/* Bootstrap Section Headings */
-.accordion {
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.card-group {
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.card img {
-    height: 250px;
-    object-fit: cover;
-}
-
-.card-title {
-    color: #006400;
-    font-weight: bold;
-}
-
-.card-text {
-    color: #333;
-}
-
-/* Match site's color scheme */
-.accordion-button:not(.collapsed) {
-    background-color: #F5DEB3;
-    color: #006400;
-}
-
-.accordion-button {
-    font-weight: bold;
-}
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    background-color: #228B22;
-}
+h1,h2,h3,h4,h5,.navbar-brand{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:700;}
+.site-nav{background:var(--green);}
+.site-nav .navbar-brand{font-size:1.5rem;color:var(--gold);}
+.site-nav .nav-link{color:#fff;}
+.site-nav .nav-link:hover,.site-nav .nav-link.active{color:var(--gold);}
+.hero{background:linear-gradient(rgba(31,77,58,.78),rgba(122,30,58,.62)),url("thieboudienne.jpg") center/cover;color:#fff;padding:6rem 0;}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);}
+.page-head{background:var(--green);color:#fff;padding:2.5rem 0;border-bottom:6px solid var(--gold);}
+.btn-gold{background:var(--gold);color:var(--ink);border:0;font-weight:600;}
+.btn-gold:hover{background:#f0b941;color:var(--ink);}
+.card{border:0;border-top:4px solid var(--hibiscus);box-shadow:0 1px 6px rgba(0,0,0,.1);}
+.card-img-top{height:200px;object-fit:cover;}
+.accordion-button:not(.collapsed){background:#f3e6d0;color:var(--green);}
+.accordion-button:focus{box-shadow:0 0 0 .25rem rgba(227,167,47,.4);}
+.sidebar{background:#fff;border-left:5px solid var(--gold);padding:1.5rem;}
+.site-footer{background:var(--ink);color:#d8d4cc;}
+.site-footer a{color:var(--gold);text-decoration:none;}
