@@ -1,29 +1,40 @@
-<article>
-    <link rel="stylesheet" href="Styles.css">
-
-    <h2>Contact Teranga Table</h2>
-
-    <p>Have a favorite Senegalese recipe or a question about our dishes? Send us a message!</p>
-
-    <form action="#">
-        
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname">
-
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname">
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email">
-
-        <label for="dish">Favorite Senegalese Dish:</label>
-        <input type="text" id="dish" name="dish">
-
-        <label for="message">Comments:</label>
-        <textarea id="message" name="message" rows="5"></textarea>
-
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-
-    </form>
-</article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Teranga Table</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Teranga Table</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="gallery.html">Recipes</a>
+        <a class="nav-link" href="index.html#facts">Culture</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<main class="container mt-5" style="max-width:600px">
+  <h1>Contact</h1>
+  <form>
+    <label class="form-label mt-3" for="name">Name</label>
+    <input class="form-control" id="name">
+    <label class="form-label mt-3" for="email">Email</label>
+    <input type="email" class="form-control" id="email">
+    <label class="form-label mt-3" for="msg">Message</label>
+    <textarea class="form-control" id="msg" rows="5"></textarea>
+    <button class="btn btn-gold mt-3">Send message</button>
+  </form>
+</main>
+<footer class="text-center py-3 mt-5">&copy; 2026 Teranga Table</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
