@@ -1,7 +1,84 @@
-:root { --green:#1f4d3a; --gold:#e3a72f; }
-.navbar { background:var(--green); }
-.navbar-brand, .nav-link.active { color:var(--gold) !important; }
-.hero { background:linear-gradient(rgba(31,77,58,.8),rgba(122,30,58,.6)), url("thieboudienne.jpg") center/cover; color:#fff; padding:5rem 0; }
-.card-img-top { height:200px; object-fit:cover; }
-.btn-gold { background:var(--gold); font-weight:600; }
-footer { background:var(--green); color:#fff; }
+:root {
+    --green: #1f4d3a;
+    --gold: #e3a72f;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.navbar {
+    background: var(--green);
+}
+
+.navbar-brand,
+.nav-link.active {
+    color: var(--gold) !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(31,77,58,.8),
+            rgba(122,30,58,.6)
+        ),
+        url("thieboudienne.jpg") center/cover;
+    color: #fff;
+    padding: 5rem 0;
+}
+
+.card {
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-gold:hover {
+    background: #c98f1d;
+    color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f8f5ef;
+    color: var(--green);
+}
+
+.site-footer {
+    background: var(--green);
+    color: #fff;
+}
+
+.site-footer a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
