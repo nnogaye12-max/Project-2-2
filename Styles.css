@@ -82,3 +82,12 @@ h1, h2, h3, .navbar-brand {
 .site-footer a:hover {
     text-decoration: underline;
 }
+.page-head {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.page-head h1 {
+    color: var(--green);
+}
